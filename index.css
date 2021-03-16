@@ -35,6 +35,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 600px;
+  
 }
 
 .coming-soon a {
@@ -127,3 +128,76 @@ body {
       opacity: 0;
     }
   }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+  .coming-soon {
+    width: 60vw !important;
+    height: 30vh;
+    bottom: -50px;
+  }
+
+  .coming-soon h2 {
+    font-size: 3rem;
+  }
+
+  .coming-soon p {
+    font-size: 1.5rem;
+  }
+
+  .coming-soon a {
+    font-size: 2.5rem !important;
+  }
+
+  .title-wrapper .name {
+    font-size: 8rem;
+  }
+
+  .title-wrapper > .typing {
+    min-height: 40px;
+    font-size: xx-large;
+  }
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .coming-soon {
+      width: 60vw !important;
+      height: 35vh;
+      bottom: -80px;
+    }
+  
+    .coming-soon h2 {
+      font-size: 4rem;
+    }
+  
+    .coming-soon p {
+      font-size: 2rem;
+      padding-bottom: 2%;
+    }
+  
+    .coming-soon a {
+      font-size: 3rem !important;
+      margin-top: 1%;
+    }
+  
+    .title-wrapper .name {
+      font-size: 8rem;
+    }
+  
+    .title-wrapper > .typing {
+      min-height: 40px;
+      font-size: xx-large;
+    }
+}

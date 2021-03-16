@@ -1,5 +1,5 @@
 var typed = new Typed(".js-typing", {
-    strings: ["Web Developer", "Project Manager", "Writer"],
+    strings: ["Writer", "Web Developer", "Product Manager"],
     showCursor: false,
     typeSpeed: 60,
     backSpeed: 60,
@@ -7,5 +7,3 @@ var typed = new Typed(".js-typing", {
     shuffle: false,
     loop: true
   });
-
-  

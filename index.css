@@ -5,7 +5,7 @@ html, body {
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -17,28 +17,58 @@ body {
 
 .section--large {
   width: 100vw;
+  padding-top: 15vw;
   /* background-color: #F4F9E9; */
 }
-
-.coming-soon {
+.box {
   padding: 3px 50px;
-  background-color: #D45113;
   border-radius: 10px;
   border-color: #F4F9E9;
   border-width: 7px;
   border-style: double;
-  /* background-color: #4B3B47; */
   color: #F4F9E9;
   position: relative;
   margin: 0 auto;
   margin-top: 5%;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  
+  width: 60vw;
 }
 
-.coming-soon a {
+.box h3 {
+  margin-top: -2%;
+}
+
+footer {
+  background-color: #4B3B47;
+  color: #F4F9E9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: 100vw;
+  padding: 6px;
+  font-size: 0.5rem;
+}
+
+.construction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.coming-soon {
+  background-color: #D45113;
+}
+
+.event {
+  background-color: #F9A03F;
+  width: 80vw;
+}
+
+.box a {
   display: block;
   margin: auto;
   padding: 1rem 1.25rem;
@@ -51,7 +81,7 @@ body {
   z-index: 1;
 }
   
-  .coming-soon a:after {
+  .box a:after {
     content: '';
     display: inline-block;
     height: 2px;
@@ -68,8 +98,12 @@ body {
   .coming-soon a:hover {
     color: #D45113;
   }
+
+  .event a:hover {
+    color: #F9A03F;
+  }
     
-    .coming-soon a:hover:after {
+    .box a:hover:after {
       right: 0;
       left: 0;
       height: 100%;
@@ -136,68 +170,91 @@ body {
 and (min-device-width: 375px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
-  .coming-soon {
+  .box {
     width: 60vw !important;
-    height: 500px;
+    /* height: 500px; */
     bottom: -50px;
   }
 
-  .coming-soon h2 {
+  .box h2 {
     font-size: 3rem;
   }
 
-  .coming-soon p {
+  .box h3 {
+    font-size: 2rem;
+  }
+
+  .box p {
     font-size: 1.5rem;
   }
 
-  .coming-soon a {
+  .box a {
     font-size: 2.5rem !important;
   }
 
   .title-wrapper .name {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   .title-wrapper > .typing {
     min-height: 40px;
     font-size: xx-large;
   }
+  .section--large {
+    padding-top: 2vw;
+  }
+
+  .title-wrapper {
+    padding-top: 2vw;
+  }
 
 }
 
 /* ----------- iPhone X ----------- */
-
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-    .coming-soon {
+    .box {
       width: 60vw !important;
-      height: 700px;
-      bottom: -80px;
+      /* height: 700px;
+      bottom: -80px; */
+      padding: 8vw !important;
     }
   
-    .coming-soon h2 {
+    .box h2 {
       font-size: 4rem;
     }
-  
-    .coming-soon p {
-      font-size: 2rem;
-      padding-bottom: 2%;
+
+    .box h3 {
+      font-size: 2.5rem;
     }
   
-    .coming-soon a {
+    .box p {
+      font-size: 2rem;
+      padding-bottom: 2vw;
+    }
+  
+    .box a {
       font-size: 3rem !important;
-      margin-top: 1%;
+      margin-top: 2vw;
     }
   
     .title-wrapper .name {
-      font-size: 8rem;
+      font-size: 6rem;
     }
   
     .title-wrapper > .typing {
       min-height: 40px;
       font-size: xx-large;
+    }
+
+    .section--large {
+      padding-top: 50vw;
+    }
+  
+    .title-wrapper {
+      padding-top: 25vw;
     }
 }

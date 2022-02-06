@@ -17,8 +17,8 @@ const sections = [
     nav:"#cookieBrittleNav",
     panel: "#cookieBrittlePanel"
   },{
-      nav: "breadPuddingNav",
-      panel: "breadPuddingPanel"
+    nav: "#breadPuddingNav",
+    panel: "#breadPuddingPanel"
   }
   
 ];

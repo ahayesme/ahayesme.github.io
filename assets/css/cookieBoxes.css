@@ -190,3 +190,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
         font-size: 1em;
     }
 }
+
+/* ----------- iPhone 13 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    #pageTitleText {
+        font-size: 4em;
+    }
+    #pageTitleBox #date {
+        text-align: unset;
+    }
+    .ingredients ul li {
+        padding-bottom: 6px;
+    }
+    
+    .ingredients ul .measurement {
+        font-size: 1em;
+    }
+}

@@ -46,8 +46,7 @@ html, body {
     text-align: center;
     color: black;
     position: relative;
-    overflow: hidden;
-    height: 100vh; }
+    margin-bottom: 8vh; }
     section a {
       display: block;
       margin: auto;
@@ -82,7 +81,52 @@ html, body {
     width: 80%; }
   
   .publicationTitle {
-    font-style: italic; }
+    font-style: italic; 
+    
+}
+
+#namePanel {
+    overflow: hidden;
+    height: 100vh;
+}
+#breadPuddingPanel .textSection {
+    margin-bottom: 10vh;
+}
+#pageTitleBox #date {
+    margin-bottom: unset;
+    text-align: right;
+    font-size: 1em;
+}
+
+#pageTitleText {
+    font-size: 6em;
+    margin-top: unset;
+    color: #D45113;
+}
+
+.textSection h2 {
+    font-size: 2em;
+}
+
+.ingredients {
+    border: 7px double #F9A03F;
+    border-radius: 10px;
+}
+
+.ingredients ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 4px;
+}
+
+.ingredients ul li {
+    padding-bottom: 8px;
+}
+
+.ingredients ul .measurement {
+    color: #D45113;
+    font-size: 1.2em;
+}
   
   /* FOOTER */
   footer {
@@ -102,3 +146,47 @@ html, body {
     justify-content: center;
     flex-direction: column;
     text-align: center; }
+
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    #pageTitleText {
+        font-size: 4em;
+    }
+    #pageTitleBox #date {
+        text-align: unset;
+    }
+    .ingredients ul li {
+        padding-bottom: 4px;
+    }
+    
+    .ingredients ul .measurement {
+        font-size: 1em;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    #pageTitleText {
+        font-size: 4em;
+    }
+    #pageTitleBox #date {
+        text-align: unset;
+    }
+    .ingredients ul li {
+        padding-bottom: 6px;
+    }
+    
+    .ingredients ul .measurement {
+        font-size: 1em;
+    }
+}

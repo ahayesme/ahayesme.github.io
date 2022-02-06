@@ -127,6 +127,11 @@ html, body {
     color: #D45113;
     font-size: 1.2em;
 }
+
+.reminder {
+    font-style: italic;
+    font-size: .6em;
+}
   
   /* FOOTER */
   footer {

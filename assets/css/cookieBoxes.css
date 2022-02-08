@@ -89,7 +89,7 @@ html, body {
     overflow: hidden;
     height: 100vh;
 }
-#breadPuddingPanel .textSection {
+#breadPuddingPanel .textSection, #browniePanel .textSection {
     margin-bottom: 10vh;
 }
 #pageTitleBox #date {

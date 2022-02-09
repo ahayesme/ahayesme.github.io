@@ -79,10 +79,25 @@ section {
     height: 100%; }
 
 section div.textSection {
-  width: 80%; }
+  width: 75%;
+  font-size: 1em;
+  line-height: 1.75em; }
+
+#socialPanel #socialIcons {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  justify-items: center; }
+  #socialPanel #socialIcons img {
+    width: 50px; }
 
 .publicationTitle {
   font-style: italic; }
+
+.highlight {
+  font-size: 2em;
+  color: #D45113; }
 
 /** For typing effect **/
 .title-wrapper {

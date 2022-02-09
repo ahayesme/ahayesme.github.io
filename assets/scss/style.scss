@@ -155,7 +155,9 @@ section {
 }
 
 section div.textSection {
-    width: 80%;
+    width: 75%;
+    font-size: 1em;
+    line-height: 1.75em;
 }
 
 // #aboutPanel {
@@ -174,8 +176,25 @@ section div.textSection {
 //     background-color: $dark-orange;
 // }
 
+#socialPanel #socialIcons {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  justify-items: center;
+
+   img {
+    width: 50px;
+  }
+}
+
 .publicationTitle {
     font-style: italic;
+}
+
+.highlight {
+  font-size: 2em;
+  color: $dark-orange;
 }
 /** For typing effect **/
 .title-wrapper {
